@@ -1,0 +1,83 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<section>
+  <article>
+    <h1>About Us</h1>
+    <!--Begin row-->
+    <div class="row">
+      <!--Begin col-->
+      <div class="column">
+        <p>
+          Pastaverse is a modern restaurant web application, developed with Django and Django Rest Framework. 
+          Explore a seamless dining experience with features like menu management, online ordering, reservations, and more.
+        </p>
+        <p>
+          <h2>Project Structure:</h2>
+          <ol>
+            <li><strong>Core App (core):</strong><br>Common functionalities such as user authentication, base templates, and global settings using the power of Django.</li>
+            <li><strong>Menu App (menu):</strong><br>Utilizes Django models and templates to handle menu items, categories, and pricing in a flexible and efficient manner.</li>
+            <li><strong>Ordering App (ordering):</strong><br>Leverages Django Rest Framework for the creation, cart management, and streamlined checkout process, ensuring a smooth ordering experience.</li>
+            <li><strong>Reservation App (reservation):</strong><br>Integrates Django's powerful features to manage table reservations and availability seamlessly.</li>
+            <li><strong>Review and Rating App (reviews):</strong><br>Implements Django Rest Framework serializers and views for a dynamic customer review and rating system.</li>
+            <li><strong>Location App (location):</strong><br>Utilizes Django's capabilities to integrate features related to the restaurant's physical location, including maps and detailed address information.</li>
+            <li><strong>User Profile App (user_profile):</strong><br>Harnesses Django's user authentication and profile management capabilities to provide a personalized user experience.</li>
+          </ol>
+        </p>
+
+        <p>
+          <h2>Key Features:</h2>
+          <ul>
+            <li>Built on the Django framework for a robust and maintainable codebase.</li>
+            <li>Django Rest Framework powers the API-driven functionalities for a responsive and modern web experience.</li>
+            <li>Seamless integration of Django's ORM for efficient database interactions.</li>
+          </ul>
+        </p>
+
+        <p>
+          <h2>Technological Stack:</h2>
+          <ul>
+            <li>Frontend Framework: Django</li>
+            <li>Backend Framework: Django and Django Rest Framework</li>
+            <li>Database: MySQL, or SQLite for a quick view of the app's features</li>
+          </ul>
+        </p>
+
+        <p>
+          <h2>How to Use:</h2>
+          <ol>
+            <li>Clone the repository to your local machine.</li>
+            <li>Set up a virtual environment and install dependencies. Pipenv take care of all the dependecies automatically, but make sure you have python 3.10 installed:</li>
+            <ul>
+              <li>Install pipenv: pip3 install pipenv</li>
+              <li>Run the virtual environment: pipenv shell</li>
+              <li>Install the dependencies: pipenv install</li>
+              <li>Run the server: python manage.py runserver</li>
+              <li>Explore the website at 127.0.0.1:8000/core</li>
+            </ul>
+          </ol>
+        </p>
+
+        <p>
+          <h2>Contribution:</h2>
+          <p>Contributions are welcome! Fork the repository, create a new branch, make your enhancements, and submit a pull request. Let's collaboratively enhance Pastaverse!</p>
+        </p>
+      </div>
+      <!--End col-->
+
+      <!--Begin col-->
+      <div class="column">
+        <figure class="figure">
+          <img
+            src="{% static 'img/quick-view.jpg' %}"
+            alt="Quick view of the app code"
+          />
+          <figcaption class="figure-caption">
+            Quick view of the application code.
+          </figcaption>
+        </figure>
+      </div>
+      <!--End col-->
+    </div>
+    <!--End row-->
+  </article>
+</section>
+{% endblock %}

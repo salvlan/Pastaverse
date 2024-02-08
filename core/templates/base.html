@@ -1,0 +1,46 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Pastaverse</title>
+
+    <meta 
+      name="description" 
+      content="Pastaverse is a modern restaurant web application, developed with Django and Django Rest Framework." 
+    />
+    <meta
+      name="author"
+      content="Sal is an Italian engineer living in New York, with a passion for IT."
+    />
+
+    <!-- Load favicon -->
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="{% static 'img/favicon.png' %}"
+    />
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+    <!-- Loads the specified Google Fonts, "Karla" and "Markazi Text" with a specific weight, to be used in the web page. -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla&family=Markazi+Text:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--Header content-->
+    {% include 'partials/_header.html' %}
+
+    <!--Main content-->
+    <main>{% block content %} {% endblock %}</main>
+
+    <!--Footer content-->
+    {% include 'partials/_footer.html' %} 
+  </body>
+</html>
