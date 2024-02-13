@@ -15,3 +15,22 @@ Pastaverse is a modern restaurant web application, developed with Django and Dja
     - Utilizes Django's capabilities to integrate features related to the restaurant's physical location, including maps and detailed address information.
 11. User Profile App (user_profile):
     - Harnesses Django's user authentication and profile management capabilities to provide a personalized user experience.
+## Key Features:
+- Built on the Django framework for a robust and maintainable codebase.
+- Django Rest Framework powers the API-driven functionalities for a responsive and modern web experience.
+- Seamless integration of Django's ORM for efficient database interactions.
+## Technological Stack:
+- Frontend Framework: Django
+- Backend Framework: Django and Django Rest Framework
+- Database: MySQL, or SQLite for a quick view of the app's features
+## How to Use:
+1. Clone the repository to your local machine.
+2. Set up a virtual environment and install dependencies. Pipenv take care of all the dependecies automatically, but make sure you have python 3.10 installed:
+    - Install pipenv: pip3 install pipenv
+    - Run the virtual environment: pipenv shell
+    - Install the dependencies: pipenv install
+    - Run the server: python manage.py runserver
+    - Explore the website at 127.0.0.1:8000/core
+
+## Contribution:
+Contributions are welcome! Fork the repository, create a new branch, make your enhancements, and submit a pull request. Let's collaboratively enhance Pastaverse!
