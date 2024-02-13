@@ -26,7 +26,7 @@ Explore a seamless dining experience with features like menu management, online 
 - Database: MySQL, or SQLite for a quick view of the app's features
 ## How to Use:
 1. Clone the repository to your local machine.
-2. Set up a virtual environment and install dependencies. Pipenv take care of all the dependecies automatically, but make sure you have python 3.10 installed:
+2. Set up a virtual environment and install dependencies writing the following commands in your Command Terminal. Pipenv take care of all the dependecies automatically, but make sure you have python 3.10 installed:
     - Install pipenv: pip3 install pipenv
     - Run the virtual environment: pipenv shell
     - Install the dependencies: pipenv install
