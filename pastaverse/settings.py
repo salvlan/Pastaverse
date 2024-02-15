@@ -171,3 +171,6 @@ for your users within the Djoser package.
 DJOSER = {
     "USER_ID_FIELD":"username",
 }
+
+# the URL you want users to be redirected to after a successful login:
+LOGIN_REDIRECT_URL = '/reservation/book'  # Change this to your desired URL

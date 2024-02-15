@@ -7,7 +7,7 @@ Explore a seamless dining experience with features like menu management, online 
 ![Home page of the Web Application](description_gifs/home_page.gif "Home page of the Web Application")
 ## Project Structure:
 1. Core App (core):
-    - Common functionalities such as user authentication, base templates, and global settings using the power of Django.
+    - Common functionalities such as base templates, and global settings using the power of Django.
 2. Menu App (menu):
     - Utilizes Django models and templates to handle menu items, categories, and pricing in a flexible and efficient manner.
 3. Ordering App (ordering):
@@ -35,7 +35,8 @@ Explore a seamless dining experience with features like menu management, online 
     - Run the virtual environment: pipenv shell
     - Install the dependencies: pipenv install
     - Run the server: python manage.py runserver
-    - Explore the website at 127.0.0.1:8000/core
+    - Run the migrations: python manage.py migrate
+    - Explore the website at 127.0.0.1:8000
 
 ## Contribution:
 Contributions are welcome! Fork the repository, create a new branch, make your enhancements, and submit a pull request. Let's collaboratively enhance Pastaverse!

@@ -6,6 +6,4 @@ from django.shortcuts import render
 def home(request):
     return render(request, 'index.html')
 
-# display the about page
-def about(request):
-    return render(request, 'about.html')
+

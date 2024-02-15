@@ -5,8 +5,10 @@
 <section>
   <article>
     <h1>Make a reservation</h1>
+
     <!--Begin row-->
     <div class="row">
+
       <!--Begin col-->
       <div class="column">
           {% csrf_token %}
@@ -17,11 +19,9 @@
               <input type="text" placeholder="Your Name" maxlength="200" required="" id="first_name">
             </p>
             <p>
-            <!-- Step 9: Part one -->
               <label for="reservation_date">Reservation Date:</label>
               <input type="date" id="reservation_date" required>
             </p>
-      
             <p>
               <label for="reservation_slot">Reservation time:</label>
               <select id="reservation_slot">
@@ -40,12 +40,10 @@
         </div>
       </div>
       <!--End col-->
+
     </div>
     <!--End row-->
-
-
-
-
+    
   </article>
 </section>
 <script>
@@ -56,10 +54,7 @@
   console.log(document.getElementById('reservation_date').value)
   getBookings()
 
-
-  /*  Step 10: Part two */
   document.getElementById('reservation_date').addEventListener('change',getBookings);
-
 
   function getBookings() {
     let reserved_slots = []
@@ -71,8 +66,7 @@
       .then(data => {
         reserved_slots = []
         bookings = ''
-        
-        /* Step 11: Part three */
+ 
         for (let i=0; i<data.length; i++){
           const item = data[i];
           console.log(item.fields);
@@ -80,8 +74,6 @@
           bookings += `<p>${item.fields.first_name} - ${formatTime(item.fields.reservation_slot)}</p>`;
         }
 
-
-        /* Step 12: Part four  */
         let slot_options = '<option value="0" disabled>Select time</option>';
         for (let i=11; i<20; i++){
           const label = formatTime(i);
@@ -91,7 +83,6 @@
             slot_options += `<option value=${i}>${label}</option>`;
           }
         }
-
         
         document.getElementById('reservation_slot').innerHTML = slot_options
         if(bookings==''){
@@ -107,7 +98,6 @@
     const label = `${t} ${ampm}`
     return label
   }
-
 
   document.getElementById('button').addEventListener('click', function (e) {
     const formdata = {

@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .models import Booking
 from .forms import BookingForm
@@ -9,20 +9,17 @@ import json
 
 # Create your views here.
 
-def reservations(request):
-    date = request.GET.get('date',datetime.today().date())
-    bookings = Booking.objects.all()
-    booking_json = serializers.serialize('json', bookings)
-    return render(request, 'bookings.html',{"bookings":booking_json})
-
 def book(request):
-    form = BookingForm()
-    if request.method == 'POST':
-        form = BookingForm(request.POST)
-        if form.is_valid():
-            form.save()
-    context = {'form':form}
-    return render(request, 'book.html', context)
+    if request.user.is_authenticated:
+        form = BookingForm()
+        if request.method == 'POST':
+            form = BookingForm(request.POST)
+            if form.is_valid():
+                form.save()
+        context = {'form':form}
+        return render(request, 'book.html', context)
+    else:
+        return redirect('../../user-profile/login')
 
 @csrf_exempt
 def bookings(request):
@@ -46,3 +43,12 @@ def bookings(request):
     booking_json = serializers.serialize('json', bookings)
 
     return HttpResponse(booking_json, content_type='application/json')
+
+"""
+def reservations(request):
+    date = request.GET.get('date',datetime.today().date())
+    bookings = Booking.objects.all()
+    booking_json = serializers.serialize('json', bookings)
+    return render(request, 'bookings.html',{"bookings":booking_json})
+"""
+
