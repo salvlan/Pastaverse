@@ -18,7 +18,7 @@ Explore a seamless dining experience with features like menu management, online 
     - Implements Django Rest Framework serializers and views for a dynamic customer review and rating system.
 9. Location App ([location](location)):
     - Utilizes Django's capabilities to integrate features related to the restaurant's physical location, including maps and detailed address information.
-11. User Profile App (user_profile):
+11. User Profile App ([user_profile](user_profile)):
     - Harnesses Django's user authentication and profile management capabilities to provide a personalized user experience.
 ## Key Features:
 - Built on the Django framework for a robust and maintainable codebase.
