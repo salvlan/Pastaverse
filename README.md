@@ -1,7 +1,7 @@
 # Pastaverse
 *Work in progress, contributions are appreciated!*
 
-Pastaverse is a cutting-edge restaurant web application, meticulously crafted with Django and Django Rest Framework. My primary focus is on fostering modularity and code reuse to create a scalable and efficient dining experience. Each component is designed as a standalone app, promoting easy integration and adaptability for future projects.  
+Pastaverse is an evolving restaurant web application, meticulously built with Django to provide a full-stack web experience. My primary focus is on fostering modularity and code reuse to create a scalable and efficient dining experience. Each component is designed as a standalone app, promoting easy integration and adaptability for future projects.  
 Explore a seamless dining experience with features like menu management, online ordering, reservations, and more.  
 
 ![Home page of the Web Application](description_gifs/home_page.gif "Home page of the Web Application")
@@ -22,12 +22,21 @@ Explore a seamless dining experience with features like menu management, online 
     - Harnesses Django's user authentication and profile management capabilities to provide a personalized user experience.
 ## Key Features:
 - Built on the Django framework for a robust and maintainable codebase.
-- Django Rest Framework powers the API-driven functionalities for a responsive and modern web experience.
 - Seamless integration of Django's ORM for efficient database interactions.
 ## Technological Stack:
-- Frontend Framework: Django
-- Backend Framework: Django and Django Rest Framework
+- Framework: Django
 - Database: MySQL, or SQLite for a quick view of the app's features
+    - If you want to use the MySQL database, compile the 'DATABASE' section as follow:
+      `DATABASES = {   
+            'default': {   
+                'ENGINE': 'django.db.backends.mysql',   
+                'NAME': '*database name*',
+                'HOST': '127.0.0.1',   
+                'PORT': '3306',    
+                'USER': '*username*',   
+                'PASSWORD': '*password*',    
+            }   
+        }`
 ## How to Use:
 1. Clone the repository to your local machine.
 2. Set up a virtual environment and install dependencies writing the following commands in your Command Terminal. Pipenv take care of all the dependecies automatically, but make sure you have python 3.10 installed:
