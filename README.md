@@ -28,15 +28,24 @@ Explore a seamless dining experience with features like menu management, online 
 - Database: MySQL, or SQLite for a quick view of the app's features
     - If you want to use the MySQL database, compile the 'DATABASE' section as follow:
 
-    `DATABASES = { 
+    `DATABASES = {
+  
         'default': {
+  
         'ENGINE': 'django.db.backends.mysql',
+  
         'NAME': 'database name',
+  
         'HOST': '127.0.0.1',
+  
         'PORT': '3306',
+  
         'USER': 'username',
+  
         'PASSWORD': 'password',
+  
         }
+  
     }`
 ## How to Use:
 1. Clone the repository to your local machine.
