@@ -6,7 +6,7 @@ Explore a seamless dining experience with features like menu management, online 
 
 ![Home page of the Web Application](description_gifs/home_page.gif "Home page of the Web Application")
 ## Project Structure:
-1. Core App (core):
+1. Core App ([core](core)):
     - Common functionalities such as base templates, and global settings using the power of Django.
 2. Menu App (menu):
     - Utilizes Django models and templates to handle menu items, categories, and pricing in a flexible and efficient manner.
