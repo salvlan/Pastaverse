@@ -28,11 +28,10 @@ Explore a seamless dining experience with features like menu management, online 
 - Database: MySQL, or SQLite for a quick view of the app's features
     - If you want to use the MySQL database, compile the 'DATABASE' section as follow:
 
-    `DATABASES = {
-  
-        'default': {
-  
-        'ENGINE': 'django.db.backends.mysql',
+```
+DATABASES = {
+    'default': {  
+    'ENGINE': 'django.db.backends.mysql',
   
         'NAME': 'database name',
   
@@ -46,7 +45,8 @@ Explore a seamless dining experience with features like menu management, online 
   
         }
   
-    }`
+    }
+```
 ## How to Use:
 1. Clone the repository to your local machine.
 2. Set up a virtual environment and install dependencies writing the following commands in your Command Terminal. Pipenv take care of all the dependecies automatically, but make sure you have python 3.10 installed:
