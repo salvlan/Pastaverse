@@ -34,8 +34,8 @@ Explore a seamless dining experience with features like menu management, online 
     - Install pipenv: pip3 install pipenv
     - Run the virtual environment: pipenv shell
     - Install the dependencies: pipenv install
-    - Run the server: python manage.py runserver
     - Run the migrations: python manage.py migrate
+    - Run the server: python manage.py runserver
     - Explore the website at 127.0.0.1:8000
 
 ## Contribution:
