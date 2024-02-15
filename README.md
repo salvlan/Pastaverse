@@ -27,6 +27,7 @@ Explore a seamless dining experience with features like menu management, online 
 - Framework: Django
 - Database: MySQL, or SQLite for a quick view of the app's features
     - If you want to use the MySQL database, compile the 'DATABASE' section as follow:
+
     `DATABASES = {     
         'default': {   
         'ENGINE': 'django.db.backends.mysql',   
