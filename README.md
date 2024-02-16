@@ -4,10 +4,10 @@
 Pastaverse is an evolving restaurant web application, meticulously built with Django to provide a full-stack web experience. My primary focus is on fostering modularity and code reuse to create a scalable and efficient dining experience. Each component is designed as a standalone app, promoting easy integration and adaptability for future projects.  
 Explore a seamless dining experience with features like menu management, online ordering, reservations, and more.  
 
-![Home page of the Web Application](description_gifs/home_page.gif "Home page of the Web Application")
 ## Project Structure:
 1. Core App ([core](core)):
     - Common functionalities such as base templates, and global settings using the power of Django.
+![Home page of the Web Application](description_gifs/core.gif "Home page of the Web Application")
 2. Menu App ([menu](menu)):
     - Utilizes Django models and templates to handle menu items, categories, and pricing in a flexible and efficient manner.
 3. Ordering App ([ordering](ordering)):
@@ -18,8 +18,10 @@ Explore a seamless dining experience with features like menu management, online 
     - Implements Django Rest Framework serializers and views for a dynamic customer review and rating system.
 9. Location App ([location](location)):
     - Utilizes Django's capabilities to integrate features related to the restaurant's physical location, including maps and detailed address information.
+![Home page of the Web Application](description_gifs/location.gif "Home page of the Web Application")
 11. User Profile App ([user_profile](user_profile)):
     - Harnesses Django's user authentication and profile management capabilities to provide a personalized user experience.
+![Home page of the Web Application](description_gifs/user_profile.gif "Home page of the Web Application")
 ## Key Features:
 - Built on the Django framework for a robust and maintainable codebase.
 - Seamless integration of Django's ORM for efficient database interactions.
