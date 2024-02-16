@@ -7,8 +7,9 @@
       <!--Begin col-->
       <div class="column">
         <p>
-          Pastaverse is a cutting-edge restaurant web application, meticulously crafted with Django and Django Rest Framework. 
-          My primary focus is on fostering modularity and code reuse to create a scalable and efficient dining experience. Each component is designed as a standalone app, promoting easy integration and adaptability for future projects.
+          Pastaverse is an evolving restaurant web application, meticulously built with Django to provide a full-stack web experience.<br>
+          My primary focus is on fostering modularity and code reuse to create a scalable and efficient dining experience.<br>
+          Each component is designed as a standalone app, promoting easy integration and adaptability for future projects. 
         </p>
         <p>
           <h2>Project Structure:</h2>
@@ -27,7 +28,6 @@
           <h2>Key Features:</h2>
           <ul>
             <li>Built on the Django framework for a robust and maintainable codebase.</li>
-            <li>Django Rest Framework powers the API-driven functionalities for a responsive and modern web experience.</li>
             <li>Seamless integration of Django's ORM for efficient database interactions.</li>
           </ul>
         </p>
@@ -35,10 +35,27 @@
         <p>
           <h2>Technological Stack:</h2>
           <ul>
-            <li>Frontend Framework: Django</li>
-            <li>Backend Framework: Django and Django Rest Framework</li>
+            <li>Framework: Django</li>
             <li>Database: MySQL, or SQLite for a quick view of the app's features</li>
+            <ul>
+              <li>If you want to use the MySQL database, compile the 'DATABASE' section inside the 'setting.py' file in the 'pastaverse' folder, as follow:</li>
+            </ul>
           </ul>
+          <pre>
+            <code>
+              DATABASES = {
+                'default': {  
+                'ENGINE': 'django.db.backends.mysql',
+                'NAME': 'your database name',
+                'HOST': '127.0.0.1',
+                'PORT': '3306',
+                'USER': 'your mysql username',
+                'PASSWORD': 'your mysql password',
+                }
+              }
+            </code>
+            replacing name, user and password with your credentials.
+        </pre>
         </p>
 
         <p>
@@ -50,8 +67,9 @@
               <li>Install pipenv: pip3 install pipenv</li>
               <li>Run the virtual environment: pipenv shell</li>
               <li>Install the dependencies: pipenv install</li>
+              <li>Run the migrations: python manage.py migrate</li>
               <li>Run the server: python manage.py runserver</li>
-              <li>Explore the website at 127.0.0.1:8000/core</li>
+              <li>Explore the website at 127.0.0.1:8000</li>
             </ul>
           </ol>
         </p>

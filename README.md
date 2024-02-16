@@ -39,7 +39,7 @@ DATABASES = {
     }
 }
 ```
-replacing name, user, ecc... with your credentials.
+replacing name, user and password with your credentials.
 ## How to Use:
 1. Clone the repository to your local machine.
 2. Set up a virtual environment and install dependencies writing the following commands in your Command Terminal. Pipenv take care of all the dependecies automatically, but make sure you have python 3.10 installed:
